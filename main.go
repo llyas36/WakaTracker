@@ -1,5 +1,9 @@
  package main
+import "fmt"
 
+func main(){
+ fmt.Println("waka tracker")
+}
 // import (
 // 	"encoding/json"
 // 	"fmt"
