@@ -5,7 +5,7 @@ import db
 # from database import db
 
 
-TOKEN = "7229233840:AAF1dPwkoi3PZY-GYN4OMUxuzyEt6LFndQ0"
+TOKEN = "telegram-token"
 
 # ----------------- Bot Commands -----------------
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):

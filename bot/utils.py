@@ -3,7 +3,7 @@ import base64
 from typing import List, Dict, Any
 def weekly_summary(api_key):
     url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
-   # api_key = "waka_be54f6f1-3b2b-4785-8ad8-2f9ba0b920f6"
+
 
     # Encode Basic Auth
     auth = base64.b64encode(f"{api_key}:".encode()).decode()
@@ -62,7 +62,7 @@ def weekly_summary(api_key):
 
 def some_stats(api_key):
     url = "https://wakatime.com/api/v1/users/current/stats/last_7_days"
-    #api_key = "waka_be54f6f1-3b2b-4785-8ad8-2f9ba0b920f6"
+
 
     # Encode Basic Auth
     auth = base64.b64encode(f"{api_key}:".encode()).decode()

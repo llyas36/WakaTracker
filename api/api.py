@@ -15,7 +15,7 @@ pass a dict to the headers parameter
 """
 
 baseURL = "https://wakatime.com/api/v1"
-api_key = "waka_be54f6f1-3b2b-4785-8ad8-2f9ba0b920f6"
+api_key = "waka-api"
 # def currentUser():
 #     # Current logged-in user
 #     url = baseURL + "/users/current"

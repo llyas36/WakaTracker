@@ -10,7 +10,7 @@ import (
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
-	username := "waka_be54f6f1-3b2b-4785-8ad8-2f9ba0b920f6"
+
 	password := ""
 	credentials := fmt.Sprintf("%s:%s", username, password)
 	//	encodedCredentials := base64.StdEncoding.EncodeToString([]byte(credentials))
@@ -42,7 +42,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 func Day_7(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "application/json")
 	url := "https://wakatime.com/api/v1/users/current/stats/last_7_days"
-	auth := fmt.Sprintf("%s:%s", "waka_be54f6f1-3b2b-4785-8ad8-2f9ba0b920f6", "")
+	auth := fmt.Sprintf("%s:%s", "", "")
 
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
