@@ -1,12 +1,13 @@
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
+import os
 from utils import weekly_summary, some_stats
 import db
 # from database import db
 
 
-TOKEN = "telegram-token"
-
+# TOKEN = "telegram-token"
+TOKEN = os.getenv("TELEGRAM_TOKEN")
 # ----------------- Bot Commands -----------------
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     welcome_message = (
